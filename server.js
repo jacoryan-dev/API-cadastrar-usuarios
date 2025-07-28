@@ -5,7 +5,7 @@ import auth from "./middlewares/auth.js";
 import cors from "cors";
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:5173' })); // Enable CORS for all routes
+app.use(cors({})); // Enable CORS for all routes
 /* Garantir que app.use(cors()) seja uma das primeiras linhas a serem executadas no arquivo do servidor, 
 antes da declaração de qualquer rota.*/
 
